@@ -1,0 +1,22 @@
+#input-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  #searchButton1 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  } 
+  .input-divider {
+    border: none;
+    height: 4px;
+    background-color: #d60909;
+    margin: 0;
+    padding: 0;
+  }
+  

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the City Name" id="cityName" value="lagos">
+    <button onclick="getWeather()">Search🔍</button>
+</body>
+<script>
+    let apiKey = 'c48fe82986f0327c396d556ad18336f2'
+    let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${apiKey}&units=metric`
+    const getWeather = () =>{
+       fetch(endpoint).then(response=>response.json())
+       .then(result)
+    }
+</script>
+</html>
